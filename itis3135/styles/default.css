@@ -14,3 +14,11 @@ body {
   a{
     color:blueviolet;
   }
+figure{
+margin:auto;
+display:block;
+width:100%;
+}
+figcaption{
+    font-style:italic;
+}

@@ -1,18 +1,18 @@
 body {
-    background-color: lightblue;
+    background-color:steelblue;
   }
   
   h1 {
-    color: white;
+    color:white;
     text-align: center;
   }
   
   p {
-    font-family: verdana;
+    font-family:verdana;
     font-size: 20px;
   }
   a{
-    color:blueviolet;
+    color:gold;
   }
 figure{
 margin:auto;
@@ -21,4 +21,28 @@ width:50%;
 }
 figcaption{
     font-style:italic;
+}
+li{
+  color:white;
+  font-family:'Trebuchet MS';
+  font-size:15px;
+}
+figcaption{
+  color:ivory;
+}
+h2{
+  color:white;
+}
+h3{
+  color:white;
+  font-family:'trebuchet MS';
+  font-size:17px;
+}
+h5{
+  color:white;
+  font-family:'Trebuchet MS';
+}
+h4{
+  color:white;
+  font-family:'Trebuchet MS';
 }

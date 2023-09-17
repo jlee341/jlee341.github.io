@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lee || Jobless Leopard || ITIS 3135 | Website Evaluations</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1> John Lee || Jobless Leopard || ITIS 3135</h1>
+        <nav>
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="/itis3135/theleeinc.com/firm.html">Company site</a>
+            ||
+            <a href="./">Back to Main Site</a>
+        </nav>
+    </header>
+    <body>
+<section>
+<h3>Good Site:<a href="https:www.apple.com">Apple</a></h3>
+<p style="font-size:12px;">Apple.com is the official online home of Apple inc, offering a sleek showcase of their latest products, services and support.
+<ul>
+<li>C:Contrast: Each element are very different from eachother and easy to read</li>
+<li>R:Repetition: All the buttons are square and the font colors are repeated, making he site look neat and uniform</li>
+<li>A:Alignment: Each element is aligned accordingly to eachother and connects well to the other pages</li>
+<li>P:Proximity: The similar elements are close in proximity to eachother while the different elements are far apart enough to tell they are different</li>
+</ul>
+</p>
+
+</section>
+<section>
+<h3>Bad Site:<a href="https:www.cnn.com">CNN</a></h3>
+<p style="font-size:12px;">CNN.com is the digital hub for CNN providing up-to-date news of events occurring all around the world of all topics including world events,
+    politics, and business.
+    <ul>
+    <li>C:Contrast: The elements all merge into one blob of text with images scattered making it hard to navigate</li>
+    <li>R:Repetition: There are images with headlines below them and that goes on for the whole pages
+        but the image sizes vary, and not all headlines below each image relate to the image.
+    </li>
+    <li>A:Alignment: Each row is aligned differently than the last, doesn't look very neat or uniform at all.</li>
+    <li>P:Proximity: Each element is very close to eachother making it hard to tell what topic is related and what isn't.</li>
+    </ul>
+</p>
+</section>
+    </body>
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/jlee341/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/jlee341">Github</a>
+            ||
+            <a href="https://jlee341.github.io/">Github.io</a>
+            ||
+            <a href="https://github.com/jlee341/jlee341.github.io/tree/main/itis3135">ITIS 3135 Github Pages</a>
+            ||
+            <a href="https://www.freecodecamp.org/Jlee341">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/Jlee341">Codeacademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/jlee418/">LinkedIn</a>
+        </nav>
+        <p><a href="theleeinc.com/index.html">The Lee Inc </a>&copy; 2023 innovative in a way never seen before</p>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>           
+    </footer>

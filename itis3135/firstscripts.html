@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lee || Jobless Leopard || ITIS 3135 || Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <h1> John Lee || Jobless Leopard || ITIS 3135</h1>
+        <nav>
+            <a href="./">Homepage</a>
+            ||
+            <a href="introduction.html">Introduction</a>
+            ||
+            <a href="contract.html">Contract</a>
+            ||
+            <a href="stuff/P-g.htm">Crappy Webpage</a>
+            ||
+            <a href="theleeinc.com/firm.html">Company site</a>
+            ||
+            <a href="/">Back to Main Site</a>
+        </nav>
+    </header>
+    
+    <main>
+        <script>
+    function speedCalculation() {
+var miles=prompt("Enter miles travelled");
+miles=parseFloat(miles);
+var time=prompt("Enter time it took to cover distance");
+time= parseFloat(time);
+var speed=miles/time;
+speed=parseInt(speed);
+alert("speed is: " + speed + "mph");
+    }
+    function addTwoAmounts(){
+        var entry;
+        var total;
+        entry=prompt("enter number 1");
+        entry=parseInt(entry);
+        var number1=entry;
+
+        entry=prompt("enter number 2");
+        entry=parseInt(entry);
+        var number2=entry;
+        total=number1 + number2;
+        alert("Sum of " + number1 +" and " + number2 + " is " + total);
+    }
+    function monthlyInstallments(){
+        var amount=prompt("Enter amount that is to be payed off");
+        amount=parseInt(amount);
+        var payment=prompt("enter payment to pay monthly");
+        payment=parseInt(payment);
+        var time=amount/payment;
+        time=parseInt(time);
+        alert("It would take " + time + " months to pay off " + amount + "with monthly installments of " + payment);
+    }
+    function calculateTax(){
+        var amount=prompt("Enter purchase amount");
+        amount=parseFloat(amount);
+        var tax=prompt("Enter the tax");
+        tax=parseFloat(tax);
+        var total=amount*(1+tax/100);
+        total=parseFloat(total);
+        alert("your total is " + total);
+    }
+    </script>
+    <script>
+        function displayGreeting(){
+            const name = document.getElementById('name').value;
+            const mood = document.getElementById('mood').value;
+
+            const favoriteNumber = parseFloat(document.getElementById('favoriteNumber').value);
+            const absFavoriteNumber = Math.abs(favoriteNumber);
+            const roundedFavoriteNumber = Math.round(absFavoriteNumber);
+
+            let polygonName;
+
+            if(roundedFavoriteNumber >= 3) {
+                const polygonNames = [
+                    'Triangle', 'Quadrilateral', 'Pentagon', 'Hexagon', 'Heptagon', 'Octagon', 'Nonagon', 'Decagon'
+                ];
+                polygonName = polygonNames[roundedFavoriteNumber - 3];
+        } else {
+            polygonName = 'a polygon with less than 3 sides';
+        }
+        alert(`Jobless Leopard welcomes you, ${name}!\nWe're glad you are doing ${mood}!\nYour favorite number corresponds to ${polygonName}.`);  }
+    </script>
+    <script>
+        function updateTime(){
+            const now= new Date();
+            const timeElement = document.getElementById('time');
+            timeElement.innerText = `Time: ${now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}`;            const dayElement = document.getElementById('day');
+            dayElement.innerText = `Day: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`;
+            const dateElement = document.getElementById('date');
+            dateElement.innerText = `Date: ${now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`;        }
+            setInterval(updateTime, 1000);
+            updateTime();
+    </script>
+        <div id="datetime">
+            <h3 id="time"></h3>
+            <h3 id="day"></h3>
+            <h3 id="date"></h3>
+        </div>
+        <h1> Welcome to Jobless Leopard Enterprises</h1>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br>
+
+        <label for="mood">How are you feeling?</label>
+        <input type="text" id="mood" placeholder="Enter your mood"><br>
+
+        <label for="favoriteNumber">Your Favorite Number:</label>
+        <input type="number" id="favoriteNumber" placeholder="Enter your favorite number"><br>
+
+        <button onclick="displayGreeting()">Submit</button>
+
+        <button onclick="speedCalculation()">Calculate Speed</button>
+        <button onclick="addTwoAmounts()">Add two amounts together</button>
+        <button onclick="monthlyInstallments()">Calculate how many monthly installments to pay off payment</button>
+        <button onclick="calculateTax()">Calculate Tax</button>
+    </main>
+    
+    <footer>
+        <nav>
+            <a href="https://webpages.charlotte.edu/jlee341/">Charlotte.edu</a>
+            ||
+            <a href="https://github.com/jlee341">Github</a>
+            ||
+            <a href="https://jlee341.github.io/">Github.io</a>
+            ||
+            <a href="https://github.com/jlee341/jlee341.github.io/tree/main/itis3135">ITIS 3135 Github Pages</a>
+            ||
+            <a href="https://www.freecodecamp.org/Jlee341">freeCodeCamp</a>
+            ||
+            <a href="https://www.codecademy.com/profiles/Jlee341">Codeacademy</a>
+            ||
+            <a href="https://www.linkedin.com/in/jlee418/">LinkedIn</a>
+        </nav>
+        <h5><a href="theleeinc.com/index.html">The Lee Inc </a>&copy; 2023 innovative in a way never seen before</h5>
+        <a href="https://validator.w3.org/check?uri=referer">
+            <img style="border:0;width:88px;height:31px" src="https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png" alt="Valid HTML!">
+           </a>
+           <a href="https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+             </a>           
+    </footer>
+</body>
+</html>

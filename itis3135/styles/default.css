@@ -102,3 +102,22 @@ table tr:nth-child(1){
 figure{
   margin:0;
 }
+@media (min-width:576px){
+  body {
+    margin: 10px;
+  }
+  img {
+    max-width:100px;
+    height:auto;
+  }
+  header{
+    padding: 10px;
+    text-align:center;
+    font-size:1.5em;
+  }
+  footer {
+    padding:10px;
+    text-align:center;
+    font-size:0.9em;
+  }
+}

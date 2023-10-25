@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Basic Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lee || Jobless Leopard || ITIS 3135 || Calculator</title>
+    <link rel="stylesheet" href="styles/default.css">
     <script src="scripts/calculator.js"></script>
 </head>
 <body>
+    <div data-include="components/header.html"></div>
     <div id="calculator">
         <input type="text" id="display" disabled>
         <!-- Buttons for numbers and operators -->
@@ -25,5 +29,7 @@
         <button class="operator-button" id="divide">/</button>
         <button id="calculate">=</button>
     </div>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
 </body>
 </html>

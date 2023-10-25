@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>John Lee || Jobless Leopard || ITIS 3135 || BYO-INTRO</title>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+<body>
+    <div data-include="components/header.html"></div>
+    <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+
+    <form id="introForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <br>
+
+        <label for="mascot">Mascot:</label>
+        <input type="text" id="mascot" required>
+        <br>
+
+        <label for="image">Image (PNG or JPG):</label>
+        <input type="file" id="image" accept=".jpg, .png" required>
+        <br>
+
+        <label for="imageCaption">Image Caption:</label>
+        <input type="text" id="imageCaption" required>
+        <br>
+
+        <label for="personalBackground">Personal Background:</label>
+        <textarea id="personalBackground" required></textarea>
+        <br>
+
+        <label for="professionalBackground">Professional Background:</label>
+        <textarea id="professionalBackground" required></textarea>
+        <br>
+
+        <label for="academicBackground">Academic Background:</label>
+        <textarea id="academicBackground" required></textarea>
+        <br>
+
+        <label for="backgroundWebDev">Background in Web Development:</label>
+        <textarea id="backgroundWebDev" required></textarea>
+        <br>
+
+        <label for="primaryPlatform">Primary Computer Platform:</label>
+        <input type="text" id="primaryPlatform" required>
+        <br>
+
+        <label for="courses">Courses currently taking:</label>
+        <div id="coursesContainer">
+            <input type="text" class="courseInput" required>
+            <button type="button" class="deleteCourse">Delete</button>
+        </div>
+        <button type="button" id="addCourse">Add Course</button>
+        <br>
+
+        <label for="funnyThing">Funny thing?</label>
+        <input type="text" id="funnyThing">
+        <br>
+
+        <label for="anythingElse">Anything else?</label>
+        <textarea id="anythingElse"></textarea>
+        <br>
+
+        <label for="agree">Checkbox "I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+        <input type="checkbox" id="agree" required>
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="scripts/survey.js"></script>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>
+
+

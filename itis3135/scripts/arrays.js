@@ -1,7 +1,8 @@
+// Declare empty arrays
 const persons = [];
 const salaries = [];
 
-
+// Get DOM elements
 const nameInput = document.getElementById('name');
 const salaryInput = document.getElementById('salary');
 const addButton = document.getElementById('addButton');
@@ -9,13 +10,13 @@ const displayResultsButton = document.getElementById('displayResultsButton');
 const resultsDiv = document.getElementById('results');
 const resultsTable = document.getElementById('results_table');
 
-
+// Add event listeners
 addButton.addEventListener('click', addSalary);
 displayResultsButton.addEventListener('click', displayResults);
 nameInput.addEventListener('click', setFocus);
 salaryInput.addEventListener('click', setFocus);
 
-
+// Function to add a person and salary to the arrays
 function addSalary() {
     const name = nameInput.value.trim();
     const salary = salaryInput.value.trim();
@@ -34,7 +35,7 @@ function addSalary() {
     setFocus();
 }
 
-
+// Function to display the average salary and highest salary
 function displayResults() {
     if (salaries.length === 0) {
         alert('No data to display.');
@@ -51,7 +52,7 @@ function displayResults() {
     `;
 }
 
-
+// Function to display the salary table
 function displaySalary() {
     resultsTable.innerHTML = `
         <tr>
@@ -70,7 +71,9 @@ function displaySalary() {
     }
 }
 
-
+// Function to set focus on the name field
 function setFocus() {
     nameInput.focus();
 }
+
+

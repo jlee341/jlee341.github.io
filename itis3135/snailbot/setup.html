@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../styles/snailbot.css">
+<title>Snailbot</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid grey;
+    }
+
+    th {
+        background-color: #bc2b2b;
+    }
+
+    tr:hover {
+        background-color: rgb(2, 2, 2);
+    }
+</style>
+</head>
+<body>
+ 
+<header style="text-align:center">
+<nav>
+<h1>
+    <a href="client.html">Snailbot</a>
+</h1>
+<ul>
+<li>
+    <a href="policy.html">Privacy Policy</a>
+</li>
+<li>
+    <a href="terms.html">Terms of Service</a>
+</li>
+<li>
+    <a href="changes.html">Changelog</a>
+</li>
+<li>
+    <a href="setup.html">Setup</a>
+</li>
+<li>
+    <a href="https://snailbot.net/invite">Invite SnailBot</a>
+</li>
+
+<li>
+    <a href="https://discord.gg/BRU7Tc2">Support server</a>
+</li>
+</ul>
+</nav>
+</header>
+<div class="bot">
+</div>
+<body>
+<h2>Automatic Feed Setup</h2>
+<p>This will guide you through how to setup automated news posting in SnailBot.</p>
+<br>
+<p><em>Note:Automated Feed 
+    Setup has drastically changed since 
+    V.2.2, taking advantage of buttons, 
+    select menus and forms to help set 
+    up a news feed.</em></p>
+<br>
+<p><strong>Supported news providers:</strong></p>
+<table>
+<thead>
+<tr>
+    <th>Provider</th>
+    <th>News Checks Run</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>warthunder</code>
+</td>
+<td>every 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>crossout</code>
+</td>
+<td>every 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>enlisted</code>
+</td>
+<td>every 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>steam</code>
+</td>
+<td>every 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>rss</code>
+</td>
+<td>every 30 minutes</td>
+</tr>
+<tr>
+<td>
+<code>smite</code>
+</td>
+<td>every 1 hour</td>
+</tr>
+<tr>
+<td>
+<code>forza</code>
+</td>
+<td>every 1 hour</td>
+</tr>
+<tr>
+<td>
+<code>blizzard</code>
+</td>
+<td>every 1 hour</td>
+</tr>
+<tr>
+<td>
+<code>league</code>
+</td>
+<td>every 1 hour</td>
+</tr>
+<tr>
+<td>
+<code>rockstar</code>
+</td>
+<td>every 1 hour</td>
+</tr>
+</tbody>
+</table>
+<div class="tabset">
+    <div class="tab" onclick="showTab('tab1')">War Thunder, Crossout, & Enlisted Feeds</div>
+    <div class="tab" onclick="showTab('tab2')">Steam Feeds</div>
+    <div class="tab" onclick="showTab('tab3')">RSS/ATOM Feeds</div>
+    <div class="tab" onclick="showTab('tab4')">All Other Feeds</div>
+</div>
+
+<div id="tab1" class="tab-content">
+    <ul>
+    <li>The first two questions that Snailbot will ask determines which channel <devblog>
+    changelog posts will go into. You can disable devblogs or changelogs, but not both.
+        The devblog and changelog channels can be different
+    changelog</li>
+    <br>
+    <li>The next two questions that SnailBot will ask determines 
+        which role devblog/changelog posts will mention. If enabled, 
+        SnailBot will mention a role whenever a new post is sent out.
+         Select a role from the list that SnailBot provides. 
+         If you do not want to have role mentions enabled, click the 
+         disable button.</li>
+         <br>
+         <li>Next,you will be prompted for the language you want to use for
+         news posts. Choose a language from the list.
+         </li>
+         <br>
+         <li>SnailBot will prompt you to select tags to filter by. 
+            This allows you to only get posts containing the tags you 
+            select. If you don't want to filter by tags and get all 
+            news, click <code>Disable Tag Filtering.</code> SnailBot will show the 
+            25 most recently seen tags in the select menu.</li>
+    </ul>
+    
+</div>
+
+<div id="tab2" class="tab-content" style="display: none;">
+    <ul>
+        <li>You will be asked the ID of the game you wish to enable the feed for. 
+            You can find this in the Steam game's product page URL, or on <a href="https://steamdb.info">SteamDB.</a> 
+            (For example, <a href="https://steamdb.info/app/440/">TF2's ID is 440)</a></li>
+        <br>
+        <li>The next question that SnailBot will ask determines which channel news posts will go into.</li>
+             <br>
+             <li>The next question that SnailBot will ask determines which role news posts will mention. If enabled, 
+                SnailBot will mention a role whenever a new post is sent out. Select a role from the list that SnailBot provides. 
+                If you do not want to have role mentions enabled, click the disable button.
+             </li>
+             <br>
+             <li>SnailBot will prompt you to select tags to filter by. 
+                This allows you to only get posts containing the tags you 
+                select. If you don't want to filter by tags and get all 
+                news, click <code>Disable Tag Filtering.</code> SnailBot will show the 
+                25 most recently seen tags in the select menu.</li>
+        </ul>
+</div>
+
+<div id="tab3" class="tab-content" style="display: none;">
+    <ul>
+        <li>You will be asked a link to an RSS/ATOM feed. Provide the link. (ex: <code>https://discordstatus.com/history.atom).</code> 
+            If you're not sure that the site has an RSS feed, 
+            just enter the link to the site and SnailBot will try to find any available feeds on that site.
+        <br>
+        <li>The next question that SnailBot will ask determines which channel news posts will go into.</li>
+             <br>
+             <li>The next question that SnailBot will ask determines which role news posts will mention.
+                 If enabled, SnailBot will mention a role whenever a new post is sent out. 
+                 Select a role from the list that SnailBot provides. 
+                If you do not want to have role mentions enabled, click the disable button.
+             </li>
+             <br>
+             <li>SnailBot will prompt you to select tags to filter by. 
+                This allows you to only get posts containing the tags you 
+                select. If you don't want to filter by tags and get all 
+                news, click <code>Disable Tag Filtering.</code> SnailBot will show the 
+                25 most recently seen tags in the select menu.</li>
+        </ul>
+</div>
+<div id="tab4" class="tab-content" style="display: none;">
+    <ul>
+        <li>The first question that SnailBot will ask determines which channel news posts will go into.
+        <br>
+        <li>The next question that SnailBot will ask determines which channel news posts will go into.</li>
+             <br>
+             <li>The next question that SnailBot will ask determines which role news posts will mention. 
+                If enabled, SnailBot will mention a role whenever a new post is sent out.
+                 Select a role from the list that SnailBot provides.
+                 If you do not want to have role mentions enabled, click the disable button.
+             </li>
+             <br>
+             <li>SnailBot will prompt you to select tags to filter by. 
+                This allows you to only get posts containing the tags you 
+                select. If you don't want to filter by tags and get all 
+                news, click <code>Disable Tag Filtering.</code> SnailBot will show the 
+                25 most recently seen tags in the select menu.</li>
+        </ul>
+</div>
+<br>
+<h2>Disabling and Listing Active Automatic Feeds</h2>
+<br>
+<p>To disable a feed, use <code>/disablefeed</code>. Discord will autocomplete providers and enabled feeds.
+    To see which feeds are enabled, use <code>/listfeed</code>.</p>
+<script src="../scripts/tabset.js"></script>
+<footer>
+    <nav>
+        <a href="client.html">Home</a>
+    </nav>
+    <nav>
+        <a href="../theleeinc.com/firm.html">TheLeeInc</a>
+    </nav>
+</footer>
+</body>
+
+</html>
+
+
+
+
+
+

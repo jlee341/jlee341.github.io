@@ -24,12 +24,128 @@
     <a href="changes.html">Changelog</a>
 </li>
 <li>
-    <a href="support.html">Support</a>
+    <a href="setup.html">Setup</a>
+</li>
+<li>
+    <a href="https://snailbot.net/invite">Invite SnailBot</a>
+</li>
+<li>
+    <a href="https://discord.gg/BRU7Tc2">Support server</a>
 </li>
 </ul>
 </nav>
 </header>
-<p>work in progress</p>
+<h1>Snailbot Changelog</h1>
+<br>
+<h2>February 12 2022 (v2.3)</h2>
+<br>
+<h3><strong>New Stuff</strong></h3>
+<ul>
+<br>
+<li>
+Rockstar Games has been added as a supported news provider.
+</li>
+<br>
+<li>
+    SnailBot now supports setting tag filters on RSS and Steam feeds. If a specific AppID or URL does not have any 
+known tags, you will not be prompted for tags.
+</li>
+<br>
+<li>
+    SnailBot should now be compatible 
+    with <a href="https://support.discord.com/hc/en-us/articles/10952896421783">Slash Command Permissions 2.0.</a>
+</li>
+<br>    
+<li>
+    SnailBot now uses Discord's built in channel/role select menus when
+     prompting a user to select a channel/role.
+    </li>
+<br>
+<li>
+    SnailBot will now keep track of the 25 most recently seen 
+    tags for a provider and auto populate a select menu for users to select tags with.
+</li>
+<br>
+<li>
+    new command has been added: <code>/editfeed</code>. You can use it to edit settings for any news 
+    configuration without having to redo the settings from scratch.
+</li>
+<br>
+<li>
+    Another new command was added: <code>/queue</code>. Use it to see if there are any news posts in the queue for your server.
+</li>
+<br>
+<li>
+    <code>/botstats</code> has a new stat: <code>Items In News Queue</code> will tell you how many news posts are queued to go out to servers.
+</li>
+<br>
+<li>
+    We've added support for sending news via webhooks in a attempt to reduce the amount of time it takes to send
+ news out. In the coming weeks, we will be trying to migrate existing news configs to use webhooks. If SnailBot
+  has the <code>Manage Webhooks</code> permission, a new <code>SnailBot News Post Helper</code> webhook will be created in any news channels
+   used by SnailBot. Otherwise, it will fall back to the original news posting method.
+</li>
+<br>
+<li>
+    <code>/diagnose</code> and <code>/listfeed</code> will now show the status of webhooks for your enabled feeds.
+</li>
+<br>
+<li>
+    We now have a <a href="https://ko-fi.com/snailbotdiscord">Ko-Fi page.</a> If you'd like to support the work we do, we accept one-time donations 
+    and monthly memberships. Monthly memberships gives servers you choose priority when new news posts are 
+    available. We will never lock any core features behind Premium.
+</li>
+<br>
+</ul>
+<ul>
+<h3>Internal Changes</h3>
+<br>
+<li>
+SnailBot will now detect invalid news configurations 
+(language no longer supported, bad RSS/ATOM feed) and it will attempt to send out a service notification
+ to let you know that it has been removed.
+</li>
+<br>
+<li>
+SnailBot will attempt to determine if a news channel actually no longer exists
+ instead of blindly trusting that Discord reports a <code>404 Not Found</code> correctly before disabling a news feed.
+</li>
+<br>
+<li>
+The menu system has been reworked to perform better.
+</li>
+<br>
+<li>
+<code>/listfeed</code> is now less confusing when there are no enabled news feeds and a single page of feeds.
+</li>
+<br>
+<li>
+The languages list was getting too long, so <code>/showlanguages</code> now takes a <code>provider</code> parameter and autocompletes any supported provider in SnailBot.
+</li>
+<br>
+<li>
+Tag support was enabled for SMITE.
+</li>
+<br>
+<li>
+<code>/postnews</code> steam now properly checks if a provided AppID was actually an integer.
+</li>
+<br>
+</ul>
+<h3>Removed Features</h3>
+<br>
+<ul>
+<li>
+    Due to lack of use and effort required to migrate, 
+    the remaining mod tools have been removed from SnailBot.
+     We recommend looking for another bot to do any logging you may need.   
+</li>
+<br>
+<li>
+Prefix support has been removed from SnailBot. Some basic commands still support being used via <code>@mentions</code> 
+(like <code>botstats</code> and <code>serverinfo</code>), but slash commands should be the preferred method of interacting with SnailBot.   
+</li>
+</ul>
 
 
 

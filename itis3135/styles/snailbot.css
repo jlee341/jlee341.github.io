@@ -166,3 +166,37 @@ h1>a{
         margin: auto;
     }
 }
+.tabset {
+    display: flex;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    background-color: #bc2b2b;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab.active {
+    background-color: #ddd;
+}
+
+.tab-content {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+code{
+color:lightskyblue;
+}
+
+a[href]{
+    color:ivory;
+}

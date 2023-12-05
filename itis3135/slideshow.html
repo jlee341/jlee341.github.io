@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Interactive Drawing</title>
+	<link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+	<header>
+    	<h2>Name Slideshow</h2>
+        <h3>John - Jam, Outlet, Hammer, Notebook</h3>
+	</header>
+<div class="slider">
+<div class="slides">
+        <img src="images/J.jpg" class="slide" alt="J - Jam" style="display: block;">
+        <img src="images/O.jpg" class="slide" alt="O - Outlet" style="display: none;">
+        <img src="images/H.jpg" class="slide" alt="H - Hammer" style="display: none;">
+        <img src="images/N.jpg" class="slide" alt="N - Notebook" style="display: none;">
+    </div>
+    <button class="prev" onclick="plusSlide(-1)">❮</button>
+    <button class="next" onclick="plusSlide(1)">❯</button>
+</div>
+<div class="thumbnail-container">
+    <img src="images/J.jpg" class="thumbnail" onclick="currentSlide(1)" alt="B - Boat">
+    <img src="images/O.jpg" class="thumbnail" onclick="currentSlide(2)" alt="R - Rainbow">
+    <img src="images/H.jpg" class="thumbnail" onclick="currentSlide(3)" alt="E - Elephant">
+    <img src="images/n.jpg" class="thumbnail" onclick="currentSlide(4)" alt="N - Notebook">
+    <img src="images/N.jpg" class="thumbnail" onclick="currentSlide(5)" alt="D - Dolphin">
+    
+</div>
+
+
+
+    <footer>
+	</footer>
+    <script>
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        function plusSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            let i;
+            const slides = document.getElementsByClassName("slide");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <div data-include="components/footer.html"></div>
+    <script src="scripts/include.js"></script>
+</body>
+</html>

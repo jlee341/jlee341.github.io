@@ -12,6 +12,18 @@ document.addEventListener("DOMContentLoaded", function () {
         // Gather data from the form
         const formData = {
             name: document.getElementById("name").value,
+            mascot : document.getElementById("mascot").value,
+            image: document.getElementById("image").value, // You might want to handle file input differently
+            imageCaption: document.getElementById("imageCaption").value,
+            personalBackground: document.getElementById("personalBackground").value,
+            professionalBackground: document.getElementById("professionalBackground").value,
+            academicBackground: document.getElementById("academicBackground").value,
+            backgroundWebDev: document.getElementById("backgroundWebDev").value,
+            primaryPlatform: document.getElementById("primaryPlatform").value,
+            courses: Array.from(document.querySelectorAll(".courseInput")).map(input => input.value),
+            funnyThing: document.getElementById("funnyThing").value,
+            anythingElse: document.getElementById("anythingElse").value,
+            agree: document.getElementById("agree").checked
             // Add other form fields here
         };
 
@@ -59,9 +71,10 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>Name: ${formData.name}</p>
             <!-- Add other form data here -->
         `;
-
+    
         introForm.parentNode.replaceChild(contentDiv, introForm);
     }
+    
 });
 
 

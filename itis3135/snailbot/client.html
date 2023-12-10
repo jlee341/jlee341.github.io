@@ -4,7 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../styles/snailbot.css">
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <title>Snailbot</title>
+
+
+
 </head>
 <body>
  
@@ -38,11 +42,18 @@
 <section class="bot">
     <div>
 <h2>Introduction</h2>
-<p>Hello there! Thanks for visiting the SnailBot Documentation. Here you will find everything you need to know about the bot. SnailBot is a public bot, which means you can freely add it and remove it from your own server using the link below.</p>
+
+<span id="element"></span>
+
 <h2>About Snailbot</h2>
-<p>Meet SnailBot! -- The best Discord bot for displaying the latest news from War Thunder, Crossout, Steam games and more. SnailBot will keep your server updated with the latest news from your favorite games, and setup is super, super easy! With the use of a single command, SnailBot will guide you through the process of setting up a feed for your server. You can even setup multiple ones if you want, and in different languages as well!</p>
-</div>
+<span id="element2"></span>
+<p></p>
 </section>
+<div class="your-class">
+    <div><img src="../images/snailbot1.png" alt="snailbot feed">Snailbot announcment</div>
+    <div><img src="../images/snailbot2.png" alt="snailbot feed setup">Setting up Snailbot </div>
+  </div>
+</div>
 <section class="bot">
     <div>
 <h2>Testimonials</h2>
@@ -76,6 +87,34 @@
 </figure>
 </div>
 </section>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.your-class').slick({
+            autoplaySpeed:1500,
+            autoplay:true,
+            prevArrow:false,
+            nextArrow:false,
+        });
+    });
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed('#element', {
+    strings: ['Hello there! Thanks for visiting the SnailBot Documentation. Here you will find everything you need to know about the bot. SnailBot is a public bot, which means you can freely add it and remove it from your own server using the link below.'],
+    typeSpeed: 10,
+  });
+</script>
+<script>
+    var typed = new Typed('#element2', {
+      strings: ['Meet SnailBot! -- The best Discord bot for displaying the latest news from War Thunder, Crossout, Steam games and more. SnailBot will keep your server updated with the latest news from your favorite games, and setup is super, super easy! With the use of a single command, SnailBot will guide you through the process of setting up a feed for your server. You can even setup multiple ones if you want, and in different languages as well!'],
+      typeSpeed: 10,
+    });
+  </script>
 <footer>
     <nav>
         <a href="client.html">Home</a>

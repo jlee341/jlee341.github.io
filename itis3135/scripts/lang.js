@@ -7,8 +7,7 @@ $(document).ready(function() {
             success: function(data) {
                 // Assuming data is an array of providers with supported languages
                 // Update your HTML with the supported languages information
-               
-
+                
 
                 data.forEach(function(provider) {      
                     var template = `
@@ -23,7 +22,7 @@ $(document).ready(function() {
     </ul>
     </div>
     </section>
-    `;
+    `; 
     $("#content").append(template)
                 });
             },
@@ -42,10 +41,9 @@ $(document).ready(function() {
             success: function(data) {
                 // Assuming data is an array of providers with supported languages
                 // Update your HTML with the supported languages information
-               
+                
 
-
-                     
+                      
                     var template = `
     <section class="bot">
     <div>
@@ -54,9 +52,9 @@ $(document).ready(function() {
     <p>Status: ${data.status}</p>
     </div>
     </section>
-    `;
+    `; 
     $("#content").append(template)
-               
+                
             },
             error: function() {
                 $('#content').html('<p>Error loading supported languages.</p>');
@@ -65,10 +63,3 @@ $(document).ready(function() {
     }
     loadVersionInfo();
 });
-
-
-
-
-
-
-
